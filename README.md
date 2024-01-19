@@ -3,7 +3,8 @@
 
  O Aplicativo possui como entrada dos dados 2 Opções:
 A primeira sendo do arquivo Settings do aplicativo realizando assim as alterações diretamente do arquivo.config para que fiquem salvas:
-![image](https://github.com/gustavohccampos/MeuPonto_.Net/assets/53590418/b5c79c9d-251d-4a18-8b91-39313078ab81)
+![image](https://github.com/gustavohccampos/MeuPonto_.Net/assets/53590418/78529500-f790-415d-8455-c3764db41dd6)
+A Flag AtivoAoIniciar irá realizar a inicialização automatica ao abrir o aplicativo caso esteja como True.
 
 Ou realizando esta alteração de forma manual na tela do aplicativo:
 
