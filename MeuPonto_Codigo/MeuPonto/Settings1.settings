@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MeuPonto" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="Entrada1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="Saida1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="Entrada2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="Saida2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00:00:00</Value>
+    </Setting>
+    <Setting Name="Configuracao" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Nome</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

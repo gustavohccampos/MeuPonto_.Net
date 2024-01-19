@@ -1,0 +1,6 @@
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.exe
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.dll
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.deps.json
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.runtimeconfig.json
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.dll.config
+C:\Users\Gustavo\Desktop\.Net\MeuPonto\MeuPonto.pdb
