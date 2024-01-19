@@ -27,6 +27,11 @@ namespace MeuPonto
             this.dateTimeSaida1.Text = settings.Saida1;
             this.dateTimeEntrada2.Text = settings.Entrada2;
             this.dateTimeSaida2.Text = settings.Saida2;
+
+            if (settings.AtivoAoIniciar =="True" || settings.AtivoAoIniciar == "true")
+            {
+                Iniciar();
+            }
         }
 
 
@@ -130,7 +135,7 @@ namespace MeuPonto
                     Notificacao("Bater Ponto de Saida2!");
                     MessageBox.Show("Bater Ponto de Saida2", "Configuration", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                    this.btnIniciar_Click(e, e);
+                    Iniciar();
                 }
 
 
@@ -142,41 +147,7 @@ namespace MeuPonto
         private void btnIniciar_Click(object sender, EventArgs e)
         {
 
-            if (ativado == true)
-            {
-                btnIniciar.Text = "Iniciar";
-                lblHora.ForeColor = Color.CornflowerBlue;
-                btnIniciar.ForeColor = Color.CornflowerBlue;
-                ativado = false;
-                alarmTime1 = null;
-                alarmTime2 = null;
-                alarmTime3 = null;
-                alarmTime4 = null;
-                dateTimeEntrada1.Enabled = true;
-                dateTimeEntrada2.Enabled = true;
-                dateTimeSaida1.Enabled = true;
-                dateTimeSaida2.Enabled = true;
-                Notificacao("MeuPonto Desativado!");
-            }
-            else if (ativado != true)
-            {
-
-                btnIniciar.Text = "Parar";
-                lblHora.ForeColor = Color.Yellow;
-                btnIniciar.ForeColor = Color.Yellow; ;
-
-                ativado = true;
-                alarmTime1 = dateTimeEntrada1.Value.Date + dateTimeEntrada1.Value.TimeOfDay;
-                alarmTime2 = dateTimeSaida1.Value.Date + dateTimeSaida1.Value.TimeOfDay;
-                alarmTime3 = dateTimeEntrada2.Value.Date + dateTimeEntrada2.Value.TimeOfDay;
-                alarmTime4 = dateTimeSaida2.Value.Date + dateTimeSaida2.Value.TimeOfDay;
-                dateTimeEntrada1.Enabled = false;
-                dateTimeEntrada2.Enabled = false;
-                dateTimeSaida1.Enabled = false;
-                dateTimeSaida2.Enabled = false;
-                Notificacao("MeuPonto Ativado!");
-            }
-
+            Iniciar();
 
         }
 
@@ -228,8 +199,45 @@ namespace MeuPonto
             notifyIcon1.Visible = true; // Mostrar o notify icon
         }
 
+        private void Iniciar() {
+            if (ativado == true)
+            {
+                btnIniciar.Text = "Iniciar";
+                lblHora.ForeColor = Color.CornflowerBlue;
+                btnIniciar.ForeColor = Color.CornflowerBlue;
+                ativado = false;
+                alarmTime1 = null;
+                alarmTime2 = null;
+                alarmTime3 = null;
+                alarmTime4 = null;
+                dateTimeEntrada1.Enabled = true;
+                dateTimeEntrada2.Enabled = true;
+                dateTimeSaida1.Enabled = true;
+                dateTimeSaida2.Enabled = true;
+                Notificacao("MeuPonto Desativado!");
+            }
+            else if (ativado != true)
+            {
 
-  
+                btnIniciar.Text = "Parar";
+                lblHora.ForeColor = Color.Yellow;
+                btnIniciar.ForeColor = Color.Yellow; ;
+
+                ativado = true;
+                alarmTime1 = dateTimeEntrada1.Value.Date + dateTimeEntrada1.Value.TimeOfDay;
+                alarmTime2 = dateTimeSaida1.Value.Date + dateTimeSaida1.Value.TimeOfDay;
+                alarmTime3 = dateTimeEntrada2.Value.Date + dateTimeEntrada2.Value.TimeOfDay;
+                alarmTime4 = dateTimeSaida2.Value.Date + dateTimeSaida2.Value.TimeOfDay;
+                dateTimeEntrada1.Enabled = false;
+                dateTimeEntrada2.Enabled = false;
+                dateTimeSaida1.Enabled = false;
+                dateTimeSaida2.Enabled = false;
+                Notificacao("MeuPonto Ativado!");
+            }
+
+        }
+
+
     }
 }
 

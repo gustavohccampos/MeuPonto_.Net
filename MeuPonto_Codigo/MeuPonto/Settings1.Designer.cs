@@ -82,5 +82,17 @@ namespace MeuPonto {
                 this["Configuracao"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public string AtivoAoIniciar {
+            get {
+                return ((string)(this["AtivoAoIniciar"]));
+            }
+            set {
+                this["AtivoAoIniciar"] = value;
+            }
+        }
     }
 }
