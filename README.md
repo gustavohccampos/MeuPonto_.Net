@@ -4,11 +4,14 @@
  O Aplicativo possui como entrada dos dados 2 Opções:
 A primeira sendo do arquivo Settings do aplicativo realizando assim as alterações diretamente do arquivo.config para que fiquem salvas:
 ![image](https://github.com/gustavohccampos/MeuPonto_.Net/assets/53590418/78529500-f790-415d-8455-c3764db41dd6)
-A Flag AtivoAoIniciar irá realizar a inicialização automatica ao abrir o aplicativo caso esteja como True.
 
 Ou realizando esta alteração de forma manual na tela do aplicativo:
 
 ![image](https://github.com/gustavohccampos/MeuPonto_.Net/assets/53590418/5179d389-6d4f-4ab2-9e70-d81679732e22)
+
+
+A Flag AtivoAoIniciar irá realizar a inicialização automatica ao abrir o aplicativo caso esteja como True.
+
 
 Quando iniciado é programado o Alerta do Windows para efetuar o disparo das notificações através do Notify do Windows nos horarios programados:
 
